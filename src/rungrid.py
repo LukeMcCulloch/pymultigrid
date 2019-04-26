@@ -43,7 +43,7 @@ for k in range(n_grids):
 u_init=np.zeros((size_init,size_init))
 f_init=np.zeros_like(u_init)
 f_init[size_init/2,size_init/2]=2.0
-foo[0].u=u_init
+foo[0].u=u_init                             #trial solution
 foo[0].f=f_init
 foo[0].fmg_fas_v_cycle(1,1,1)
 

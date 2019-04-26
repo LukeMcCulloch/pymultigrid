@@ -65,7 +65,8 @@ def gs_rb_step(v,f,h2):
 
 def get_lhs(u,h2):
     """ Return discretized operator L(u).  
-    h2=h**2 for spacing h. """
+        h2=h**2 for spacing h. 
+    """
     w=np.zeros_like(u)
     w[1:-1,1:-1]=(
             u[0:-2,1:-1] + u[2: ,1:-1]+
